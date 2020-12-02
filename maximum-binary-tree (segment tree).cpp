@@ -92,7 +92,6 @@ public:
         vector<pair<int,int>> stree(4*size);    
         buildtree(nums, stree, 0, size-1, 1);
         
-        return helper(nums, temp, stree, 0, nums.size()-1);
-        
+        return helper(nums, temp, stree, 0, nums.size()-1);   
     }
 };
