@@ -57,6 +57,3 @@ public:
         
         
         return resultHead;
-        
-    }
-};
