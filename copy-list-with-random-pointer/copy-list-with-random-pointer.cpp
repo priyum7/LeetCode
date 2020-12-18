@@ -28,9 +28,7 @@ public:
             temp = temp->next;
         }
         
-        Node* newHead=NULL;
         temp = head;
-        Node* resultHead = NULL;
         
         while(temp!=NULL)
         {
@@ -39,21 +37,11 @@ public:
                 newNodeMap[temp]->next = newNodeMap[temp->next];
             if(temp->random)
                 newNodeMap[temp]->random = newNodeMap[temp->random];
-            
-            if(newHead==NULL)
-            {
-                newHead=newNodeMap[temp];
-                resultHead=newHead;
-            }
-            else
-            {
-                newHead->next = newNodeMap[temp];
-                newHead = newHead->next;
-            }
             temp = temp->next;
                 
         }
         
+        return newNodeMap[head];
         
-        
-        return resultHead;
+    }
+};
