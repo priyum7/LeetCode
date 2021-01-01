@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/0/2021 at 10:45)](https://leetcode.com/problems/next-permutation/solution/)  
 <h2>31. Next Permutation</h2><h3>Medium</h3><hr><div><p>Implement <strong>next permutation</strong>, which rearranges numbers into the lexicographically next greater permutation of numbers.</p>
 
 <p>If such an arrangement is not possible, it must rearrange it as the lowest possible order (i.e., sorted in ascending order).</p>
