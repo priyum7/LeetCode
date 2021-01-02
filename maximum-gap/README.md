@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/0/2021 at 20:54)](https://leetcode.com/problems/maximum-gap/solution/)  
 <h2>164. Maximum Gap</h2><h3>Hard</h3><hr><div><p>Given an unsorted array, find the maximum difference between the successive elements in its sorted form.</p>
 
 <p>Return 0 if the array contains less than 2 elements.</p>
