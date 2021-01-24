@@ -6,7 +6,7 @@ public:
         
         while(left<right)
         {
-            int temp = s[left];
+            char temp = s[left];
             s[left] = s[right];
             s[right] = temp;
             left++;
