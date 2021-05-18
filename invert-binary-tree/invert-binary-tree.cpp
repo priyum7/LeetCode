@@ -11,25 +11,18 @@
  */
 class Solution {
 public:
-    
-    TreeNode* helper(TreeNode* root)
-    {
-        if(root==NULL)
-        {
-            return NULL;
-        }
+    TreeNode* invertTree(TreeNode* root) {
         
-        TreeNode* left = root->left;
-        TreeNode* right = root->right;
-        root->left = helper(right);
-        root->right = helper(left);
+        if(!root)
+            return NULL;
+        
+        TreeNode* left  = root->left;
+        TreeNode* right  = root->right;
+        
+        root->left = invertTree(right);
+        root->right = invertTree(left);
         
         return root;
-    }
-    
-    TreeNode* invertTree(TreeNode*& root) {
-        
-        return helper(root);
         
     }
 };
